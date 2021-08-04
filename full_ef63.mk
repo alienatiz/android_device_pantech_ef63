@@ -15,6 +15,7 @@
 # limitations under the License.
 
 # Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from ef63 device
@@ -37,7 +38,7 @@ TARGET_VENDOR_PRODUCT_NAME := ef63
 TARGET_VENDOR_DEVICE_NAME := ef63
 
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
+#PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="ef63-user 6.0.1 MHC19Q ZNH2KAS1KN release-keys" 
 
-BUILD_FINGERPRINT := pantech/ef63:6.0.1/MHC19Q/ZNH2KAS1KN:user/release-keys
+#BUILD_FINGERPRINT := pantech/ef63:6.0.1/MHC19Q/ZNH2KAS1KN:user/release-keys
